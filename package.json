@@ -2,7 +2,7 @@
 	"name": "adc-stylebook-yaml-components",
 	"displayName": "Stylebook Nitro Components",
 	"description": "Snippets of YAML Nitro components for ADM Stylebooks",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "RDavis",
 	"engines": {
 		"vscode": "^1.28.0"
@@ -11,8 +11,21 @@
 		"type": "git",
 		"url": "https://github.com/rd636/vscode-adc-stylebook-yaml-components"
 	},
+	"icon": "images/citrix-logo-.png",
+	"galleryBanner": {
+		"color": "#1879B9"
+	},
+	"homepage": "http://developer.citrix.com",
 	"categories": [
-		"Snippets"
+		"Snippets",
+		"Extension Packs"
+	],
+	"keywords": [
+		"NetScaler",
+		"Citrix ADM",
+		"Citrix ADC",
+		"Stylebook",
+		"Stylebooks"
 	],
 	"contributes": {
 		"snippets": [
@@ -21,5 +34,10 @@
 				"path": "./snippets.json"
 			}
 		]
+	},
+	"__metadata": {
+		"id": "e6d7c9ac-c7ca-4919-87d6-e7d28eb3bdd9",
+		"publisherDisplayName": "R. Davis",
+		"publisherId": "35b73d1f-cdfe-43d8-a377-908698dd535e"
 	}
 }
