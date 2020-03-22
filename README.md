@@ -7,7 +7,7 @@ This vscode extention includes snippets of [Nitro API data](https://developer-do
 Vscode makes searching the thousands of snippets easy. 
 ## Demo
 
-![demo](https://github.com/rd636/vscode-adc-stylebook-yaml-components/blob/master/demo.gif)
+![demo](https://raw.githubusercontent.com/rd636/vscode-adc-stylebook-yaml-components/master/demo.gif)
 
 ## Getting Started
 
