@@ -11,6 +11,6 @@ Vscode makes searching the thousands of snippets easy.
 
 ## Getting Started
 
-- Place this folder into `C:\Users<UserName>.vscode\extensions`
-- CTL+SHST+P to activate extension.
-- Use CTL+SPACE to activate the search window.
+- Place this folder into `C:\Users\<UserName>\.vscode\extensions`
+- `CTL+SHFT+X` to activate `Stylebook Nitro Components` extension.
+- In Editor area, use `CTL+SPACE` to activate the snippet search window.
