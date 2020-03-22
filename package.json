@@ -1,0 +1,21 @@
+{
+	"name": "netscaler-stylebook-yaml-components",
+	"displayName": "Stylebook Nitro Components",
+	"description": "Snippets of YAML Nitro components for ADM Stylebooks",
+	"version": "0.0.1",
+	"publisher": "Rick.Davis@citrix.com",
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "yaml",
+				"path": "./snippets.json"
+			}
+		]
+	}
+}
