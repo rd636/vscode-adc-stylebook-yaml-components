@@ -1,24 +1,4 @@
 {
-   "lbvserver": {
-      "prefix": "lbvserver",
-      "body": [
-         "name: lbvserver-comp",
-         "type: ns::lbvserver",
-         "properties:",
-         "  name: $1", "  servicetype: ${2|HTTP, FTP, TCP, UDP, SSL, SSL_BRIDGE, SSL_TCP, DTLS, NNTP, DNS, DHCPRA, ANY, SIP_UDP, SIP_TCP, SIP_SSL, DNS_TCP, RTSP, PUSH, SSL_PUSH, RADIUS, RDP, MYSQL, MSSQL, DIAMETER, SSL_DIAMETER, TFTP, ORACLE, SMPP, SYSLOGTCP, SYSLOGUDP, FIX, SSL_FIX, PROXY, USER_TCP, USER_SSL_TCP, QUIC|}", "  ipv46?: $3", "  ippattern?: $4", "  ipmask?: $5", "  port?: $6", "  range?: $7", "  persistencetype?: ${8|SOURCEIP, COOKIEINSERT, SSLSESSION, RULE, URLPASSIVE, CUSTOMSERVERID, DESTIP, SRCIPDESTIP, CALLID, RTSPSID, DIAMETER, FIXSESSION, USERSESSION, NONE|}", "  timeout?: $9", "  persistencebackup?: ${10|SOURCEIP, NONE|}", "  backuppersistencetimeout?: $11", "  lbmethod?: ${12|ROUNDROBIN, LEASTCONNECTION, LEASTRESPONSETIME, URLHASH, DOMAINHASH, DESTINATIONIPHASH, SOURCEIPHASH, SRCIPDESTIPHASH, LEASTBANDWIDTH, LEASTPACKETS, TOKEN, SRCIPSRCPORTHASH, LRTM, CALLIDHASH, CUSTOMLOAD, LEASTREQUEST, AUDITLOGHASH, STATICPROXIMITY, USER_TOKEN|}", "  hashlength?: $13", "  netmask?: $14", "  v6netmasklen?: $15", "  backuplbmethod?: ${16|ROUNDROBIN, LEASTCONNECTION, LEASTRESPONSETIME, SOURCEIPHASH, LEASTBANDWIDTH, LEASTPACKETS, CUSTOMLOAD|}", "  cookiename?: $17", "  rule?: $18", "  listenpolicy?: $19", "  listenpriority?: $20", "  resrule?: $21", "  persistmask?: $22", "  v6persistmasklen?: $23", "  pq?: ${24|ON, OFF|}", "  sc?: ${25|ON, OFF|}", "  rtspnat?: ${26|ON, OFF|}", "  m?: ${27|IP, MAC, IPTUNNEL, TOS|}", "  tosid?: $28", "  datalength?: $29", "  dataoffset?: $30", "  sessionless?: ${31|ENABLED, DISABLED|}", "  trofspersistence?: ${32|ENABLED, DISABLED|}", "  state?: ${33|ENABLED, DISABLED|}", "  connfailover?: ${34|DISABLED, STATEFUL, STATELESS|}", "  redirurl?: $35", "  cacheable?: ${36|YES, NO|}", "  clttimeout?: $37", "  somethod?: ${38|CONNECTION, DYNAMICCONNECTION, BANDWIDTH, HEALTH, NONE|}", "  sopersistence?: ${39|ENABLED, DISABLED|}", "  sopersistencetimeout?: $40", "  healththreshold?: $41", "  sothreshold?: $42", "  sobackupaction?: ${43|DROP, ACCEPT, REDIRECT|}", "  redirectportrewrite?: ${44|ENABLED, DISABLED|}", "  downstateflush?: ${45|ENABLED, DISABLED|}", "  backupvserver?: $46", "  disableprimaryondown?: ${47|ENABLED, DISABLED|}", "  insertvserveripport?: ${48|OFF, VIPADDR, V6TOV4MAPPING|}", "  vipheader?: $49", "  authenticationhost?: $50", "  authentication?: ${51|ON, OFF|}", "  authn401?: ${52|ON, OFF|}", "  authnvsname?: $53", "  push?: ${54|ENABLED, DISABLED|}", "  pushvserver?: $55", "  pushlabel?: $56", "  pushmulticlients?: ${57|YES, NO|}", "  tcpprofilename?: $58", "  httpprofilename?: $59", "  dbprofilename?: $60", "  comment?: $61", "  l2conn?: ${62|ON, OFF|}", "  oracleserverversion?: ${63|10G, 11G|}", "  mssqlserverversion?: ${64|70, 2000, 2000SP1, 2005, 2008, 2008R2, 2012, 2014|}", "  mysqlprotocolversion?: $65", "  mysqlserverversion?: $66", "  mysqlcharacterset?: $67", "  mysqlservercapabilities?: $68", "  appflowlog?: ${69|ENABLED, DISABLED|}", "  netprofile?: $70", "  icmpvsrresponse?: ${71|PASSIVE, ACTIVE|}", "  rhistate?: ${72|PASSIVE, ACTIVE|}", "  newservicerequest?: $73", "  newservicerequestunit?: ${74|PER_SECOND, PERCENT|}", "  newservicerequestincrementinterval?: $75", "  minautoscalemembers?: $76", "  maxautoscalemembers?: $77", "  persistavpno?: $78", "  skippersistency?: ${79|Bypass, ReLb, None|}", "  td?: $80", "  authnprofile?: $81", "  macmoderetainvlan?: ${82|ENABLED, DISABLED|}", "  dbslb?: ${83|ENABLED, DISABLED|}", "  dns64?: ${84|ENABLED, DISABLED|}", "  bypassaaaa?: ${85|YES, NO|}", "  recursionavailable?: ${86|YES, NO|}", "  processlocal?: ${87|ENABLED, DISABLED|}", "  dnsprofilename?: $88", "  lbprofilename?: $89", "  redirectfromport?: $90", "  httpsredirecturl?: $91", "  retainconnectionsoncluster?: ${92|YES, NO|}", "  weight?: $93", "  servicename?: $94", "  redirurlflags?: $95", "  newname?: $96",
-         "#Ref: https://developer-docs.citrix.com/projects/netscaler-nitro-api/en/12.0/configuration/load-balancing/lbvserver/lbvserver/" 
-      ]  
-   },
-   "lbvserver_rewritepolicy_binding": {
-      "prefix": "lbvserver rewritepolicy binding",
-      "body": [
-         "name: lbvserver_rewritepolicy_binding-comp",
-         "type: ns::lbvserver_rewritepolicy_binding",
-         "properties:",
-         "  priority?: $1", "  bindpoint?: ${2|REQUEST, RESPONSE|}", "  policyname?: $3", "  labelname?: $4", "  name: $5", "  gotopriorityexpression?: $6", "  invoke?: $7", "  labeltype?: ${8|reqvserver, resvserver, policylabel|}",
-         "#Ref: https://developer-docs.citrix.com/projects/netscaler-nitro-api/en/12.0/configuration/load-balancing/lbvserver_rewritepolicy_binding/lbvserver_rewritepolicy_binding/" 
-      ]  
-   },
    "aaaglobal_aaapreauthenticationpolicy_binding": {
       "prefix": "aaaglobal aaapreauthenticationpolicy binding",
       "body": [
