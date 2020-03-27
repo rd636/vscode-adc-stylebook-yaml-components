@@ -2,7 +2,7 @@
 	"name": "adc-stylebook-yaml-components",
 	"displayName": "Stylebook Nitro Components",
 	"description": "Snippets of YAML Nitro components for ADM Stylebooks",
-	"version": "0.1.1",
+	"version": "0.1.3",
 	"publisher": "RDavis",
 	"engines": {
 		"vscode": "^1.28.0"
